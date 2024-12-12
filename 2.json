@@ -1,0 +1,48 @@
+[
+{
+    "object_type": "NamespaceRecord",
+    "start": 1,
+    "count": 3,
+    "total": 4,
+    "page_size": 20,
+    "page_num": 1,
+    "items": [
+        {
+            "id": 1093,
+            "name": "t450-u000133",
+            "user_id": 133,
+            "tenant_id": 450,
+            "primary_namespace": true,
+            "username": "abhay.kumar-a",
+            "tenant": "tn-al-ghs-stg10",
+            "imported": false,
+            "snapshots": [],
+            "backups": []
+        },
+        {
+            "id": 1094,
+            "name": "t450-u000131",
+            "user_id": 131,
+            "tenant_id": 450,
+            "primary_namespace": true,
+            "username": "vishnu.kumar-a",
+            "tenant": "tn-al-ghs-stg10",
+            "imported": false,
+            "snapshots": [],
+            "backups": []
+        },
+        {
+            "id": 1095,
+            "name": "ns-al-gtt-stg10",
+            "user_id": 131,
+            "tenant_id": 450,
+            "primary_namespace": false,
+            "username": "vishnu.kumar-a",
+            "tenant": "tn-al-ghs-stg10",
+            "imported": false,
+            "snapshots": [],
+            "backups": []
+        }
+    ]
+}
+]

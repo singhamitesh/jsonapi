@@ -1,0 +1,116 @@
+[
+{
+            "id": 427,
+            "name": "tn-ie-sym-stg",
+            "description": "RAKUTENLAB-27209_APP-111",
+            "tenant_type": "ROBIN_TENANT",
+            "deleted": false,
+            "protected": false,
+            "limits": null,
+            "rpool_limits": [
+                {
+                    "rpool": "default",
+                    "tenant": "tn-ie-sym-stg",
+                    "limits": {
+                        "max_cores_per_tenant": 101,
+                        "max_mem_per_tenant": 119185342464,
+                        "max_ssd_per_tenant": 370440929280
+                    }
+                }
+            ],
+            "users": [
+                {
+                    "username": "svc.cloud-namespace",
+                    "first_name": "svc",
+                    "last_name": "cloud-namespace",
+                    "email": null,
+                    "source": "ldap",
+                    "role": "tenantadmin"
+                },
+                {
+                    "username": "svc.cloud-rcpmonitor",
+                    "first_name": "svc",
+                    "last_name": "cloud-rcpmonitor",
+                    "email": null,
+                    "source": "ldap",
+                    "role": "tenantadmin"
+                },
+                {
+                    "username": "abhay.kumar-a",
+                    "first_name": "abhay",
+                    "last_name": "kumar",
+                    "email": "abhay.b.kumar@rakuten.com",
+                    "source": "ldap",
+                    "role": "tenantadmin"
+                },
+                {
+                    "username": "vishnu.kumar-a",
+                    "first_name": "vishnu",
+                    "last_name": "kumar",
+                    "email": "vishnu.kumar@rakuten.com",
+                    "source": "ldap",
+                    "role": "tenantadmin"
+                }
+            ],
+            "rpools": [
+                "default"
+            ],
+            "ip_pools": [
+                "robin-default"
+            ],
+            "cur_total_cores": 0,
+            "cur_total_mem": 0,
+            "cur_total_hdd_alloc": 0,
+            "cur_total_ssd_alloc": 0,
+            "cur_total_gpus": 0
+        },
+        {
+            "id": 450,
+            "name": "tn-al-ghs-stg10",
+            "description": "RAKUTENLAB-27232_APP-44",
+            "tenant_type": "ROBIN_TENANT",
+            "deleted": false,
+            "protected": false,
+            "limits": null,
+            "rpool_limits": [
+                {
+                    "rpool": "default",
+                    "tenant": "tn-al-ghs-stg10",
+                    "limits": {
+                        "max_cores_per_tenant": 100,
+                        "max_mem_per_tenant": 107374182400,
+                        "max_ssd_per_tenant": 107374182400
+                    }
+                }
+            ],
+            "users": [
+                {
+                    "username": "abhay.kumar-a",
+                    "first_name": "abhay",
+                    "last_name": "kumar",
+                    "email": "abhay.b.kumar@rakuten.com",
+                    "source": "ldap",
+                    "role": "tenantadmin"
+                },
+                {
+                    "username": "vishnu.kumar-a",
+                    "first_name": "vishnu",
+                    "last_name": "kumar",
+                    "email": "vishnu.kumar@rakuten.com",
+                    "source": "ldap",
+                    "role": "tenantadmin"
+                }
+            ],
+            "rpools": [
+                "default"
+            ],
+            "ip_pools": [
+                "robin-default"
+            ],
+            "cur_total_cores": 0,
+            "cur_total_mem": 0,
+            "cur_total_hdd_alloc": 0,
+            "cur_total_ssd_alloc": 0,
+            "cur_total_gpus": 0
+        }
+]

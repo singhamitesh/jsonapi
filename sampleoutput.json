@@ -1,0 +1,151 @@
+{
+    "lmp": "RAKUTENLAB-26946",
+    "created_by": "Farrukhbek Karimov",
+    "reservation_interval_days": 150,
+    "cluster_id": "40153f39-5f20-4b90-8e8e-2d4606dd9ba4",
+    "resources": {
+        "rpool_name": "default",
+        "ldap_server": "ad_server_1",
+        "reservation_data": [
+            {
+                "reservation_id": "uhn7klr37_tn-rh-ipa-auth-test77-v1",
+                "tenant_level": {
+                    "name": "tn-rh-ipa-auth-test77-v1",
+                    "description": "APP099_RAKUTENLAB-26946",
+                    "cpu_limits": [
+                        {
+                            "value": 200,
+                            "unit": "cores"
+                        }
+                    ],
+                    "mem_limits": [
+                        {
+                            "value": 200,
+                            "unit": "Gi"
+                        }
+                    ],
+                    "ssd_limits": [
+                        {
+                            "value": 400,
+                            "unit": "Gi"
+                        }
+                    ]
+                },
+                "namespace_level": [
+                    {
+                        "name": "ns-rh-ipa-auth-test77-1",
+                        "owner_username": "abhay.kumar-a",
+                        "cpu_quota": {
+                            "value": 100,
+                            "unit": "cores"
+                        },
+                        "mem_quota": {
+                            "value": 100,
+                            "unit": "Gi"
+                        },
+                        "persistent_storage": [
+                            {
+                                "storage_class_name": "robin",
+                                "value": 200,
+                                "unit": "Gi"
+                            }
+                        ],
+                        "ephemeral_storage": {
+                            "value": 50,
+                            "unit": "Gi"
+                        },
+                        "hugepages": {
+                            "2Mi": 0,
+                            "1Gi": 60
+                        }
+                    },
+                    {
+                        "name": "ns-rh-ipa-auth2-test77-2",
+                        "owner_username": "vishnu.kumar-a",
+                        "cpu_quota": {
+                            "value": 100,
+                            "unit": "cores"
+                        },
+                        "mem_quota": {
+                            "value": 100,
+                            "unit": "Gi"
+                        },
+                        "persistent_storage": [
+                            {
+                                "storage_class_name": "robin",
+                                "value": 150,
+                                "unit": "Gi"
+                            }
+                        ],
+                        "ephemeral_storage": {
+                            "value": 0,
+                            "unit": "Gi"
+                        },
+                        "hugepages": {
+                            "2Mi": 126,
+                            "1Gi": 0
+                        }
+                    }
+                ],
+                "network": {
+                    "default_ip_pools": [
+                        "robin-default"
+                    ],
+                    "non_default_ip_pools": [
+                        {
+                            "name": "nw-mv-cor-sr-upf-n3-da-ex-v6",
+                            "driver": "sriov",
+                            "vlan_number": 3900,
+                            "zoneid": "default",
+                            "ranges": [
+                                "240b:c0e0:0101:2F0E:DF28:0002:0080:0001-0003"
+                            ],
+                            "gateway": "240b:c0e0:0101:2F0E::FFFF",
+                            "prefix": "64",
+                            "ifcount": "2",
+                            "vfdriver": "vfio-pci",
+                            "trusted": "on",
+                            "spoofchk": "off"
+                        },
+                        {
+                            "name": "nw-mv-cor-sr-upf-n4u-da-ex-v6",
+                            "driver": "sriov",
+                            "vlan_number": 3856,
+                            "zoneid": "default",
+                            "ranges": [
+                                "240b:c0e0:0101:2F10:DF28:0002:0080:0001-0003"
+                            ],
+                            "gateway": "240b:c0e0:0101:2F10::FFFF",
+                            "prefix": "64",
+                            "ifcount": "2",
+                            "vfdriver": "vfio-pci",
+                            "trusted": "off",
+                            "spoofchk": "on"
+                        },
+                        {
+                            "name": "nw-rh-ipa-ov-vlan-3583-ex-v6-wrong-ip",
+                            "driver": "ovs",
+                            "vlan_number": 1565,
+                            "zoneid": "default",
+                            "ranges": [
+                                "240b:c0e0:104:5DFD:1c01:2::0003-0009"
+                            ],
+                            "gateway": "240b:c0e0:104:5dfd::ffff",
+                            "prefix": "64"
+                        }
+                    ]
+                },
+                "users": [
+                    {
+                        "username": "farrukhbek.karimov",
+                        "namespaces": [
+                            "ns-rh-ipa-auth2-test77-2",
+                            "ns-rh-ipa-auth-test77-1"
+                        ],
+                        "role": "tenantadmin"
+                    }
+                ]
+            }
+        ]
+    }
+}
